@@ -1,0 +1,5 @@
+sample-get-profile:
+  url: http://localhost:3000/auth/profile
+  method: GET
+  headers:
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTYwNjc5NywiZXhwIjoxNjk5NjA2ODU3fQ.wDKc4_Y9dX7iHt7AjEwBJrEsGXpTidQdkI4UJxOX3pQ

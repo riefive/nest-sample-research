@@ -1,0 +1,26 @@
+sample-login:  # 11/10/2023, 15:59:57:397
+  request:
+    url: http://localhost:3000/auth/login
+    method: POST
+    headers:
+      Content-Type: application/json
+    body: |-
+      {
+        "username": "john",
+        "password": "changeme"
+      }
+  response:  # 65 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-length: '182'
+      content-type: application/json; charset=utf-8
+      date: Fri, 10 Nov 2023 08:59:57 GMT
+      etag: W/"b6-nIDf79idrpo6P2JRuDaAuvAmmGM"
+      x-powered-by: Express
+    body: |-
+      {
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTYwNjc5NywiZXhwIjoxNjk5NjA2ODU3fQ.wDKc4_Y9dX7iHt7AjEwBJrEsGXpTidQdkI4UJxOX3pQ"
+      }

@@ -1,0 +1,13 @@
+[
+  {
+    "name": "sample-get-profile",
+    "test": "sample-get-profile",
+    "type": "request",
+    "start": "2023-11-10T09:00:16.796Z",
+    "end": "2023-11-10T09:00:16.852Z",
+    "result": {
+      "status": "Errored",
+      "message": "Request 'sample-get-profile' ERRORED in 56 ms: Expected result file not found: c:/Users/MLGLTP02/Documents/researches/nest/nest-sample-auth/results/expected/request/sample-get-profile.yaml"
+    }
+  }
+]

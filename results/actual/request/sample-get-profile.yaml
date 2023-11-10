@@ -1,0 +1,23 @@
+sample-get-profile:  # 11/10/2023, 16:00:16:797
+  request:
+    url: http://localhost:3000/auth/profile
+    method: GET
+    headers: {}
+  response:  # 32 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-length: '61'
+      content-type: application/json; charset=utf-8
+      date: Fri, 10 Nov 2023 09:00:16 GMT
+      etag: W/"3d-sm5AwNmNbxI9ytdJUAdjuJXwxGk"
+      x-powered-by: Express
+    body: |-
+      {
+        "exp": 1699606857,
+        "iat": 1699606797,
+        "sub": 1,
+        "username": "john"
+      }
