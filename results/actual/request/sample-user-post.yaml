@@ -1,0 +1,30 @@
+sample-user-post:  # 11/13/2023, 15:01:18:939
+  request:
+    url: http://localhost:3000/users
+    method: POST
+    headers:
+      Content-Type: Application/json
+    body: |-
+      {
+        "fullName": "John Doe Three",
+        "birthday": "1984-01-01",
+        "isActive": true
+      }
+  response:  # 123 ms
+    status:
+      code: 201
+      message: Created
+    headers:
+      connection: close
+      content-length: '76'
+      content-type: application/json; charset=utf-8
+      date: Mon, 13 Nov 2023 08:01:19 GMT
+      etag: W/"4c-ttn3zCbdmBVQoENH+mOW1W/Lr4U"
+      x-powered-by: Express
+    body: |-
+      {
+        "fullName": "John Doe Three",
+        "birthday": "1984-01-01",
+        "isActive": true,
+        "id": 3
+      }

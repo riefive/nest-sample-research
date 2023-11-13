@@ -1,0 +1,25 @@
+sample-user-get:  # 11/13/2023, 14:59:19:300
+  request:
+    url: http://localhost:3000/users
+    method: GET
+    headers: {}
+  response:  # 62 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-length: '72'
+      content-type: application/json; charset=utf-8
+      date: Mon, 13 Nov 2023 07:59:19 GMT
+      etag: W/"48-QEZlDgpaFkXotehc2PW+b3b+CnQ"
+      x-powered-by: Express
+    body: |-
+      [
+        {
+          "id": 1,
+          "fullName": "John Doe",
+          "birthday": "1984-01-01",
+          "isActive": true
+        }
+      ]

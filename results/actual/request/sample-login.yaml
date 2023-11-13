@@ -1,4 +1,4 @@
-sample-login:  # 11/13/2023, 09:20:44:691
+sample-login:  # 11/13/2023, 14:09:05:177
   request:
     url: http://localhost:3000/auth/login
     method: POST
@@ -9,7 +9,7 @@ sample-login:  # 11/13/2023, 09:20:44:691
         "username": "john",
         "password": "changeme"
       }
-  response:  # 93 ms
+  response:  # 90 ms
     status:
       code: 200
       message: OK
@@ -17,10 +17,10 @@ sample-login:  # 11/13/2023, 09:20:44:691
       connection: close
       content-length: '182'
       content-type: application/json; charset=utf-8
-      date: Mon, 13 Nov 2023 02:20:44 GMT
-      etag: W/"b6-XKlMlYEM012ZbXDoHw1YnARRsQY"
+      date: Mon, 13 Nov 2023 07:09:05 GMT
+      etag: W/"b6-65IJSj8oRjTtmmnTpRn+Mtj4E7M"
       x-powered-by: Express
     body: |-
       {
-        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTg0MjA0NCwiZXhwIjoxNjk5ODQyMTA0fQ.i4s_hn6HIL11108LL3ZTkWpe0xHfiE7FxPwf6KkPv4g"
+        "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTg1OTM0NSwiZXhwIjoxNjk5ODY2NTQ1fQ.4DJ901_uh9G4DeJjdZ4yC22G9l6RfWiR17UlxQLclj8"
       }

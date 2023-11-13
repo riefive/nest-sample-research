@@ -1,0 +1,22 @@
+sampe-user:  # 11/13/2023, 14:58:29:151
+  request:
+    url: http://localhost:3000/users
+    method: POST
+    headers:
+      Content-Type: Application/json
+    body: |-
+      {
+        "fullName": "John Doe",
+        "birthday": "1984-01-01",
+        "isActive": true
+      }
+  response:  # 106 ms
+    status:
+      code: 201
+      message: Created
+    headers:
+      connection: close
+      content-length: '0'
+      date: Mon, 13 Nov 2023 07:58:29 GMT
+      x-powered-by: Express
+    body: ''
