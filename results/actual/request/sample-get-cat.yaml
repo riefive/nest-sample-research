@@ -1,0 +1,17 @@
+sample-get-cat:  # 11/13/2023, 11:32:08:186
+  request:
+    url: http://localhost:3000/cats
+    method: GET
+    headers: {}
+  response:  # 50 ms
+    status:
+      code: 200
+      message: OK
+    headers:
+      connection: close
+      content-length: '28'
+      content-type: text/html; charset=utf-8
+      date: Mon, 13 Nov 2023 04:32:08 GMT
+      etag: W/"1c-urK9YBmm0W1IAjqJ3GX7/PyYwtI"
+      x-powered-by: Express
+    body: This action returns all cats

@@ -1,0 +1,4 @@
+sample-get-cat:
+  url: http://localhost:3000/cats
+  method: GET
+  headers: {}

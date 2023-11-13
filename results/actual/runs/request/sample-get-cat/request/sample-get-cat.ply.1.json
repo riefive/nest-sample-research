@@ -1,0 +1,37 @@
+[
+  {
+    "name": "sample-get-cat",
+    "test": "sample-get-cat",
+    "type": "request",
+    "end": "2023-11-13T04:32:08.266Z",
+    "result": {
+      "status": "Submitted",
+      "message": "Request 'sample-get-cat' SUBMITTED"
+    },
+    "request": {
+      "name": "sample-get-cat",
+      "type": "request",
+      "url": "http://localhost:3000/cats",
+      "method": "GET",
+      "headers": {},
+      "submitted": "2023-11-13T04:32:08.186Z"
+    },
+    "response": {
+      "runId": "1ce6c557f5d50",
+      "status": {
+        "code": 200,
+        "message": "OK"
+      },
+      "headers": {
+        "connection": "close",
+        "content-length": "28",
+        "content-type": "text/html; charset=utf-8",
+        "date": "Mon, 13 Nov 2023 04:32:08 GMT",
+        "etag": "W/\"1c-urK9YBmm0W1IAjqJ3GX7/PyYwtI\"",
+        "x-powered-by": "Express"
+      },
+      "body": "This action returns all cats",
+      "time": 50
+    }
+  }
+]
