@@ -1,30 +1,34 @@
-sample-user-post:  # 11/13/2023, 15:01:18:939
+sample-user-post:  # 11/14/2023, 09:32:07:792
   request:
-    url: http://localhost:3000/users
+    url: http://localhost:3000/users/1/post
     method: POST
     headers:
       Content-Type: Application/json
     body: |-
       {
-        "fullName": "John Doe Three",
-        "birthday": "1984-01-01",
-        "isActive": true
+        "title": "Lorem ipsum",
+        "description": "first my post"
       }
-  response:  # 123 ms
+  response:  # 117 ms
     status:
       code: 201
       message: Created
     headers:
       connection: close
-      content-length: '76'
+      content-length: '138'
       content-type: application/json; charset=utf-8
-      date: Mon, 13 Nov 2023 08:01:19 GMT
-      etag: W/"4c-ttn3zCbdmBVQoENH+mOW1W/Lr4U"
+      date: Tue, 14 Nov 2023 02:32:07 GMT
+      etag: W/"8a-k2SjDkH192D/HCuJqwevBR/VYtA"
       x-powered-by: Express
     body: |-
       {
-        "fullName": "John Doe Three",
-        "birthday": "1984-01-01",
-        "isActive": true,
-        "id": 3
+        "title": "Lorem ipsum",
+        "description": "first my post",
+        "user": {
+          "id": 1,
+          "fullName": "John Doe",
+          "birthday": "1984-01-01",
+          "isActive": true
+        },
+        "id": 1
       }

@@ -1,13 +1,18 @@
-import { Injectable, Inject } from '@nestjs/common';
+import { Injectable, HttpException, HttpStatus } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { User } from './users.entity';
+import { Post } from 'src/posts/posts.entity';
+import { PostType } from 'src/posts/post.type';
 
 export type UserType = any;
 
 @Injectable()
 export class UsersService {
-    constructor(@InjectRepository(User) private usersRepository: Repository<User>) {}
+    constructor(
+        @InjectRepository(User) private usersRepository: Repository<User>,
+        @InjectRepository(Post) private postsRepository: Repository<Post>
+    ) {}
 
     private readonly users = [
         {
@@ -32,8 +37,8 @@ export class UsersService {
 
     async getUser(_id: number): Promise<User[]> {
         return await this.usersRepository.find({
-            select: ["fullName", "birthday", "isActive"],
-            where: [{ "id": _id }]
+            select: ['fullName', 'birthday', 'isActive'],
+            where: [{ 'id': _id }]
         });
     }
 
@@ -43,5 +48,17 @@ export class UsersService {
 
     async deleteUser(user: User) {
         return this.usersRepository.delete(user);
+    }
+
+    async createUserPost(_id: number, body: PostType) {
+        const user = await this.usersRepository.findOneBy({ id: _id })
+        if (!user) {
+            throw new HttpException(
+                'User not found. Cannot create post',
+                HttpStatus.BAD_REQUEST
+            )
+        }
+        const saved = this.postsRepository.create({ ...body, user })
+        return await this.postsRepository.save(saved)
     }
 }

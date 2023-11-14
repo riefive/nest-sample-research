@@ -3,7 +3,7 @@
     "name": "sample-user-post",
     "test": "sample-user-post",
     "type": "request",
-    "end": "2023-11-13T08:01:19.083Z",
+    "end": "2023-11-14T02:32:07.938Z",
     "result": {
       "status": "Submitted",
       "message": "Request 'sample-user-post' SUBMITTED"
@@ -11,30 +11,30 @@
     "request": {
       "name": "sample-user-post",
       "type": "request",
-      "url": "http://localhost:3000/users",
+      "url": "http://localhost:3000/users/1/post",
       "method": "POST",
       "headers": {
         "Content-Type": "Application/json"
       },
-      "body": "{\n  \"fullName\": \"John Doe Three\",\n  \"birthday\": \"1984-01-01\",\n  \"isActive\": true\n}",
-      "submitted": "2023-11-13T08:01:18.939Z"
+      "body": "{\n  \"title\": \"Lorem ipsum\",\n  \"description\": \"first my post\"\n}",
+      "submitted": "2023-11-14T02:32:07.792Z"
     },
     "response": {
-      "runId": "1d9d688658274",
+      "runId": "216753c8bf49c",
       "status": {
         "code": 201,
         "message": "Created"
       },
       "headers": {
         "connection": "close",
-        "content-length": "76",
+        "content-length": "138",
         "content-type": "application/json; charset=utf-8",
-        "date": "Mon, 13 Nov 2023 08:01:19 GMT",
-        "etag": "W/\"4c-ttn3zCbdmBVQoENH+mOW1W/Lr4U\"",
+        "date": "Tue, 14 Nov 2023 02:32:07 GMT",
+        "etag": "W/\"8a-k2SjDkH192D/HCuJqwevBR/VYtA\"",
         "x-powered-by": "Express"
       },
-      "body": "{\n  \"fullName\": \"John Doe Three\",\n  \"birthday\": \"1984-01-01\",\n  \"isActive\": true,\n  \"id\": 3\n}",
-      "time": 123
+      "body": "{\n  \"title\": \"Lorem ipsum\",\n  \"description\": \"first my post\",\n  \"user\": {\n    \"id\": 1,\n    \"fullName\": \"John Doe\",\n    \"birthday\": \"1984-01-01\",\n    \"isActive\": true\n  },\n  \"id\": 1\n}",
+      "time": 117
     }
   }
 ]

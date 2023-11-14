@@ -1,0 +1,7 @@
+sample-user-save:
+  url: http://localhost:3000/users
+  method: POST
+  headers:
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTg1OTM0NSwiZXhwIjoxNjk5ODY2NTQ1fQ.4DJ901_uh9G4DeJjdZ4yC22G9l6RfWiR17UlxQLclj8
+    Content-Type: Application/json
+  body: "{\r\n  \"fullName\": \"John Doe Three\",\r\n  \"birthday\": \"1984-01-01\",\r\n  \"isActive\": true\r\n}"
