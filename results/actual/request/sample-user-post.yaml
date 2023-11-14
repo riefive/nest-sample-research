@@ -1,4 +1,4 @@
-sample-user-post:  # 11/14/2023, 09:32:07:792
+sample-user-post:  # 11/14/2023, 09:34:12:116
   request:
     url: http://localhost:3000/users/1/post
     method: POST
@@ -6,29 +6,29 @@ sample-user-post:  # 11/14/2023, 09:32:07:792
       Content-Type: Application/json
     body: |-
       {
-        "title": "Lorem ipsum",
-        "description": "first my post"
+        "title": "Lorem ipsum second",
+        "description": "second my post"
       }
-  response:  # 117 ms
+  response:  # 65 ms
     status:
       code: 201
       message: Created
     headers:
       connection: close
-      content-length: '138'
+      content-length: '146'
       content-type: application/json; charset=utf-8
-      date: Tue, 14 Nov 2023 02:32:07 GMT
-      etag: W/"8a-k2SjDkH192D/HCuJqwevBR/VYtA"
+      date: Tue, 14 Nov 2023 02:34:12 GMT
+      etag: W/"92-kadtqlvOGwYo0FqVEa8byxZ3bd8"
       x-powered-by: Express
     body: |-
       {
-        "title": "Lorem ipsum",
-        "description": "first my post",
+        "title": "Lorem ipsum second",
+        "description": "second my post",
         "user": {
           "id": 1,
           "fullName": "John Doe",
           "birthday": "1984-01-01",
           "isActive": true
         },
-        "id": 1
+        "id": 2
       }

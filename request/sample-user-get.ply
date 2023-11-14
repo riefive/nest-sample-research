@@ -1,5 +1,5 @@
 sample-user-get:
-  url: http://localhost:3000/users
+  url: http://localhost:3000/users/1
   method: GET
   headers:
-    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTg1OTM0NSwiZXhwIjoxNjk5ODY2NTQ1fQ.4DJ901_uh9G4DeJjdZ4yC22G9l6RfWiR17UlxQLclj8
+    Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTkyOTExNiwiZXhwIjoxNjk5OTM2MzE2fQ.jyU1b2nCHThyuF9lsZLBGrC_Gh22foPqjKNyrQAz6LE

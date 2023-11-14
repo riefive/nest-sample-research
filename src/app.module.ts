@@ -6,7 +6,6 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { CatsController } from './cats/cats.controller';
 import { User } from './users/users.entity'
-import { PostsController } from './posts/posts.controller';
 import { Post } from './posts/posts.entity';
 import { dbConfig } from '../ormconfig'
 
@@ -20,7 +19,7 @@ import { dbConfig } from '../ormconfig'
     AuthModule,
     UsersModule
   ],
-  controllers: [AppController, CatsController, PostsController],
+  controllers: [AppController, CatsController],
   providers: [AppService],
 })
 export class AppModule {}

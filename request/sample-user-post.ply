@@ -4,4 +4,4 @@ sample-user-post:
   headers:
     Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsInVzZXJuYW1lIjoiam9obiIsImlhdCI6MTY5OTkyOTExNiwiZXhwIjoxNjk5OTM2MzE2fQ.jyU1b2nCHThyuF9lsZLBGrC_Gh22foPqjKNyrQAz6LE
     Content-Type: Application/json
-  body: "{\r\n  \"title\": \"Lorem ipsum\",\r\n  \"description\": \"first my post\"\r\n}"
+  body: "{\r\n  \"title\": \"Lorem ipsum second\",\r\n  \"description\": \"second my post\"\r\n}"

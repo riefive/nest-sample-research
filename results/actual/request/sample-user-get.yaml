@@ -1,25 +1,36 @@
-sample-user-get:  # 11/13/2023, 14:59:19:300
+sample-user-get:  # 11/14/2023, 09:39:31:303
   request:
-    url: http://localhost:3000/users
+    url: http://localhost:3000/users/1
     method: GET
     headers: {}
-  response:  # 62 ms
+  response:  # 49 ms
     status:
       code: 200
       message: OK
     headers:
       connection: close
-      content-length: '72'
+      content-length: '205'
       content-type: application/json; charset=utf-8
-      date: Mon, 13 Nov 2023 07:59:19 GMT
-      etag: W/"48-QEZlDgpaFkXotehc2PW+b3b+CnQ"
+      date: Tue, 14 Nov 2023 02:39:31 GMT
+      etag: W/"cd-9Exj1sJ1ZjohVVAFmd4THhhoJ60"
       x-powered-by: Express
     body: |-
       [
         {
-          "id": 1,
           "fullName": "John Doe",
           "birthday": "1984-01-01",
-          "isActive": true
+          "isActive": true,
+          "posts": [
+            {
+              "id": 1,
+              "title": "Lorem ipsum",
+              "description": "first my post"
+            },
+            {
+              "id": 2,
+              "title": "Lorem ipsum second",
+              "description": "second my post"
+            }
+          ]
         }
       ]

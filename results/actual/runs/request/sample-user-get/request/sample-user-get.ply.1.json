@@ -1,0 +1,37 @@
+[
+  {
+    "name": "sample-user-get",
+    "test": "sample-user-get",
+    "type": "request",
+    "end": "2023-11-14T02:39:31.387Z",
+    "result": {
+      "status": "Submitted",
+      "message": "Request 'sample-user-get' SUBMITTED"
+    },
+    "request": {
+      "name": "sample-user-get",
+      "type": "request",
+      "url": "http://localhost:3000/users/1",
+      "method": "GET",
+      "headers": {},
+      "submitted": "2023-11-14T02:39:31.303Z"
+    },
+    "response": {
+      "runId": "216dc801a8dd8",
+      "status": {
+        "code": 200,
+        "message": "OK"
+      },
+      "headers": {
+        "connection": "close",
+        "content-length": "205",
+        "content-type": "application/json; charset=utf-8",
+        "date": "Tue, 14 Nov 2023 02:39:31 GMT",
+        "etag": "W/\"cd-9Exj1sJ1ZjohVVAFmd4THhhoJ60\"",
+        "x-powered-by": "Express"
+      },
+      "body": "[\n  {\n    \"fullName\": \"John Doe\",\n    \"birthday\": \"1984-01-01\",\n    \"isActive\": true,\n    \"posts\": [\n      {\n        \"id\": 1,\n        \"title\": \"Lorem ipsum\",\n        \"description\": \"first my post\"\n      },\n      {\n        \"id\": 2,\n        \"title\": \"Lorem ipsum second\",\n        \"description\": \"second my post\"\n      }\n    ]\n  }\n]",
+      "time": 49
+    }
+  }
+]
