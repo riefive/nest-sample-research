@@ -5,10 +5,14 @@ import { AppService } from './app.service';
 import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { BookModule } from './books/book.module';
+import { MovieModule } from './movies/movie.module';
 import { CatsController } from './cats/cats.controller';
 import { User } from './users/users.entity'
 import { Post } from './posts/posts.entity';
-import { dbConfig } from '../ormconfig'
+import { dbConfig } from '../ormconfig';
+
+const isLazy = false
+const customModules = isLazy ? [] : [BookModule, MovieModule]
 
 @Module({
   imports: [
@@ -18,9 +22,8 @@ import { dbConfig } from '../ormconfig'
       synchronize: true
     }), 
     AuthModule,
-    BookModule,
     UsersModule
-  ],
+  ].concat(customModules),
   controllers: [AppController, CatsController],
   providers: [AppService],
 })
