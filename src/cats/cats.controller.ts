@@ -1,10 +1,13 @@
 import { Controller, Get, Post, Param, Query, Res, Redirect, HttpStatus } from '@nestjs/common';
 import { Response } from 'express';
+import { CatsService } from './cats.service';
 import { Public } from '../auth/decorators/public.decorator';
 
 @Controller('cats')
 @Public()
 export class CatsController {
+    constructor(private readonly catsService: CatsService) {}
+
     @Post()
     create(): string {
         return 'This action adds a new cat';
@@ -12,7 +15,7 @@ export class CatsController {
 
     @Get()
     findAll(): string {
-        return 'This action returns all cats';
+        return this.catsService.findAll();
     }
 
     // use parameter
