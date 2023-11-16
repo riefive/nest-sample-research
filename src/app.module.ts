@@ -11,6 +11,7 @@ import { CatsModule } from './cats/cats.module';
 import { User } from './users/users.entity'
 import { Post } from './posts/posts.entity';
 import { dbConfig } from '../ormconfig';
+import { PaymentController } from './payment/payment.controller';
 
 const isLazy = false
 const customModules = isLazy ? [] : [BookModule, MovieModule]
@@ -27,7 +28,7 @@ const customModules = isLazy ? [] : [BookModule, MovieModule]
     UsersModule,
     CatsModule
   ].concat(customModules),
-  controllers: [AppController],
+  controllers: [AppController, PaymentController],
   providers: [AppService],
 })
 export class AppModule {}
